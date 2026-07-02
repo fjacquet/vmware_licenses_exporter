@@ -48,4 +48,4 @@ nav:
       - 0001 Consume core, retain govmomi: adr/0001-consume-core-retain-govmomi.md
 
 extra:
-  version: v0.1.0
+  version: v1.0.0

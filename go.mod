@@ -3,7 +3,7 @@ module github.com/fjacquet/vmware_licenses_exporter
 go 1.26.4
 
 require (
-	github.com/fjacquet/licenses-exporter-core v0.1.0
+	github.com/fjacquet/licenses-exporter-core v1.0.0
 	github.com/sirupsen/logrus v1.9.4
 	github.com/spf13/cobra v1.10.2
 	github.com/vmware/govmomi v0.55.0
