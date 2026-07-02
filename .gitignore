@@ -1,6 +1,29 @@
-bin/
-dist/
+# build artifacts
+/bin/
+/dist/
 *.out
 coverage.html
+vmware_licenses_exporter
+
+# logs
+*.log
+
+# docs site
+/site/
+
+# local secrets
 .env
+*.local.yaml
+.claude.local.md
+.claude/settings.local.json
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/
+
+# rtk
+.rtk/
+
+# internal task-tracking artifacts (not part of the published repo)
 .superpowers/

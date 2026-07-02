@@ -1,0 +1,56 @@
+site_name: vmware_licenses_exporter
+site_description: VMware vSphere license Prometheus + OTLP exporter, built on licenses-exporter-core
+site_url: https://fjacquet.github.io/vmware_licenses_exporter/
+repo_url: https://github.com/fjacquet/vmware_licenses_exporter
+repo_name: fjacquet/vmware_licenses_exporter
+
+# The design-spec/plan working docs live under docs/superpowers/ and are not part of the
+# published site (and would otherwise fail `--strict` for not being listed in nav).
+exclude_docs: |
+  superpowers/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+
+nav:
+  - Metrics Reference: metrics.md
+  - Deployment:
+      - Docker: deployment/docker.md
+  - Dashboards: dashboards.md
+  - Architecture Decisions:
+      - Overview: adr/index.md
+      - 0001 Consume core, retain govmomi: adr/0001-consume-core-retain-govmomi.md
+
+extra:
+  version: v0.1.0
