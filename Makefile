@@ -62,7 +62,7 @@ coverage-upload:
 
 # --parallelism 1: govmomi + otel/gRPC pull in enough weight that building all
 # target arches concurrently can OOM the CI runner. Serialize the builds so
-# peak memory stays within the runner (parity with the family's msgraph sibling).
+# peak memory stays within the runner.
 release:
 	goreleaser release --clean --parallelism 1
 
