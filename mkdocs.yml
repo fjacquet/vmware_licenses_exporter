@@ -4,11 +4,6 @@ site_url: https://fjacquet.github.io/vmware_licenses_exporter/
 repo_url: https://github.com/fjacquet/vmware_licenses_exporter
 repo_name: fjacquet/vmware_licenses_exporter
 
-# The design-spec/plan working docs live under docs/superpowers/ and are not part of the
-# published site (and would otherwise fail `--strict` for not being listed in nav).
-exclude_docs: |
-  superpowers/
-
 theme:
   name: material
   palette:

@@ -22,7 +22,7 @@ linters:
   exclusions:
     rules:
       # No G304 exclusions needed: all operator-supplied file reads (the --config
-      # file and clientSecretFile secret refs) now funnel through
+      # file and passwordFile secret refs) now funnel through
       # licenses-exporter-core, not this repo.
       # Test mocks intentionally write static fixtures to ResponseWriter; test
       # signatures keep the standard (t *testing.T) param even when unused.
