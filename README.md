@@ -72,6 +72,8 @@ Brings up the exporter (`:9106`), Prometheus, and Grafana, auto-provisioned. See
 [docs/deployment/docker.md](docs/deployment/docker.md) and
 [docs/dashboards.md](docs/dashboards.md).
 
+![Enterprise Licenses — Overview dashboard](docs/images/licenses-overview.png)
+
 ## Development
 
 ```bash

@@ -7,6 +7,8 @@ provider) and `grafana/provisioning/datasources/datasource.yml` (Prometheus data
 Bring it up with `docker compose up` (see [Docker deployment](deployment/docker.md)) and
 open Grafana at `http://localhost:3000`.
 
+![Enterprise Licenses — Overview dashboard](images/licenses-overview.png)
+
 ## Template variables
 
 | Variable | Query | Purpose |
