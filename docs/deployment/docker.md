@@ -41,6 +41,12 @@ against `http://127.0.0.1:9106/livez` (`127.0.0.1`, not `localhost`: busybox
 `wget` tries `::1` first and the exporter binds IPv4 only), and both compose
 files carry the matching `healthcheck:`.
 
+`/metrics` accepts repeated
+[`name[]`](https://prometheus.io/docs/instrumenting/exposition_formats/) query
+parameters to return only the named metric families, e.g.
+`/metrics?name[]=license_up`. A scrape with no `name[]` parameter is
+unaffected and returns the full exposition as before.
+
 ## One-command demo stack (Compose)
 
 ```bash
