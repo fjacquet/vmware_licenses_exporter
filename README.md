@@ -39,6 +39,7 @@ the full reference.
 make cli
 ./bin/vmware_licenses_exporter --config config.yaml
 # metrics: http://localhost:9106/metrics   health: http://localhost:9106/health
+# probes:  http://localhost:9106/livez     http://localhost:9106/readyz  (always 200)
 ```
 
 Useful flags: `--once --debug` runs a single collection cycle and dumps every collected
