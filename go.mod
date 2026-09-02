@@ -4,7 +4,7 @@ go 1.26.6
 
 require (
 	github.com/fjacquet/licenses-exporter-core v1.1.1
-	github.com/sirupsen/logrus v1.10.0
+	github.com/sirupsen/logrus v1.10.1
 	github.com/spf13/cobra v1.10.2
 	github.com/vmware/govmomi v0.55.1
 )
