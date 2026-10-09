@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
+### Security
+
+- Build with Go 1.27.2 to fix standard-library vulnerabilities reported by govulncheck in net/http, net/http/internal/http2, crypto/tls and mime/multipart (GO-2026-6603, -6605, -6607, -6608, -6610, -6611, -6613, -6617).
+- Update dependencies with `go get -u ./...`: golang.org/x/net v0.59.0 -> v0.60.0 (govulncheck flagged versions below v0.60.0), golang.org/x/sys v0.48.0 -> v0.49.0, golang.org/x/sync v0.23.0 -> v0.24.0, google.golang.org/grpc v1.83.2 -> v1.84.0, prometheus/client_golang v1.24.1 -> v1.25.0, licenses-exporter-core v1.1.2 -> v1.1.3, and other indirect modules.
+- Pin `golangci-lint` v2.13.2 -> v2.14.0 (v2.13.2 cannot type-check against the Go 1.27.2 standard library).
+
 ## [2.1.4] - 2026-10-03
 
 ### Changed
